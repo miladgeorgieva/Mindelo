@@ -1,0 +1,99 @@
+section {
+    background-color: #fafafa;
+}
+
+#activity-container {
+    padding: 60px 0;
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+
+.activities-heading {
+    text-align: center;
+    font-family: DroidSans;
+    letter-spacing: 1px;
+}
+
+.activities-heading > img {
+    width: 95px;
+    height: 5.5px;
+}
+
+.activity-box {
+    margin: 40px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;;
+    border-radius: 0px;
+}
+
+.activity-photo {
+    overflow: hidden;
+    height: 180px;
+}
+
+.activity-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity-category {
+    font-family: DroidSans;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.activity-description {
+    font-family: CabinRegular;
+    width: 80%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+hr {
+    margin-bottom: 0.5rem;
+}
+
+.activity-comments-likes {
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-date, .activity-comments-likes {
+    font-family: DroidSans;
+    color: #333333;
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.activity-comments-likes > div {
+    margin-right: 8px;
+}
+
+.activity-author {
+    font-family: DroidSans;
+    color: #333333;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.activity-author > span {
+    font-family: CabinMedium;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+.activity-metadata {
+    padding-bottom: 20px;
+}

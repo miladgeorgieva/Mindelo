@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@font-face {
+    font-family: 'DroidSans';
+    src: url('/assets/fonts/DroidSans.ttf');
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('/assets/fonts/DroidSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'CabinMedium';
+    src: url('/assets/fonts/Cabin-Medium.otf');
+}
+
+@font-face {
+    font-family: 'CabinSemiBold';
+    src: url('/assets/fonts/Cabin-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('/assets/fonts/Cabin-Regular.otf');
+}
