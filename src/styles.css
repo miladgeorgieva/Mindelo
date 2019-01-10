@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 @font-face {
@@ -24,3 +25,9 @@
     font-family: 'CabinRegular';
     src: url('/assets/fonts/Cabin-Regular.otf');
 }
+=======
+/* You can add global styles to this file, and also import other style files */
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> 884ef8482ec6a679e031e4897c0fada555c4e6c2

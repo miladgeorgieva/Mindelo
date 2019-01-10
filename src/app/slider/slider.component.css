@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('/assets/fonts/DroidSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'CabinMedium';
+    src: url('/assets/fonts/Cabin-Medium.otf');
+}
+
+@font-face {
+    font-family: 'CabinSemiBold';
+    src: url('/assets/fonts/Cabin-SemiBold.otf');
+}
+
+>>>>>>> 884ef8482ec6a679e031e4897c0fada555c4e6c2
 .carousel {
     max-height: 550px;
     overflow: hidden;

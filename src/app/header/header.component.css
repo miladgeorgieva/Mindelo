@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+@font-face {
+    font-family: 'DroidSans';
+    src: url('/assets/fonts/DroidSans.ttf');
+}
+
+>>>>>>> 884ef8482ec6a679e031e4897c0fada555c4e6c2
 #logo-img {
     width: 140px;
     height: auto;

@@ -17,6 +17,7 @@ article {
 
 #about-caption {
     padding: 30px 0 30px 2%;
+<<<<<<< HEAD
 }
 
 h3 {
@@ -56,4 +57,6 @@ p {
     border-radius: 25px;
     letter-spacing: 0.1rem;
     margin-top: 20px;
+=======
+>>>>>>> 884ef8482ec6a679e031e4897c0fada555c4e6c2
 }
