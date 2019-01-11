@@ -1,4 +1,4 @@
-footer {
+#footer-desktop, #footer-mobile {
     background-color: #333333;
 }
 
@@ -21,6 +21,26 @@ footer {
 
 .footer-menu-icons {
     font-size: 1rem;
+}
+
+.twitter-icon {
+    transition: color 0.3s ease-in-out;
+}
+
+.twitter-icon:hover i {
+    color: #30a8ff;
+}
+
+.fb-icon:hover i {
+    color: #5f5db7;
+}
+
+.insta-icon:hover i {
+    color: #d840ef;
+}
+
+.gp-icon:hover i {
+    color: #ff0000;
 }
 
 .footer-links {
@@ -53,4 +73,62 @@ i {
     color: #bac2c4;
     font-size: 0.6rem;
     align-self: flex-end;
+}
+
+#footer-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #footer-container {
+        width: 90%;
+    }
+
+    #footer-copyright, #footer-links, #footer-rights {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .footer-navbar {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #footer-container {
+        flex-direction: column;
+    }
+
+    #footer-desktop {
+        display: none;
+    }
+
+    #footer-mobile {
+        display: flex;
+    }
+
+    #footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons-nav {
+        padding-top: 40px;
+    }
+
+    .footer-navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer-copyright, #footer-rights {
+        align-self: center;
+        padding-top: 10px;
+    }
+
+    #footer-copyright {
+        padding-top: 30px;
+    }
 }

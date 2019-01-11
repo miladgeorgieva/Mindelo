@@ -31,6 +31,7 @@ section {
     background-clip: border-box;
     border: none;;
     border-radius: 0px;
+    padding: 0px;
 }
 
 .activity-photo {
@@ -68,7 +69,7 @@ hr {
     flex-direction: row;
 }
 
-.activity-date, .activity-comments-likes {
+.activity-date, .activity-comments-likes, .activity-comments-likes a {
     font-family: DroidSans;
     color: #333333;
     font-size: 0.5rem;
@@ -86,7 +87,7 @@ hr {
     letter-spacing: 1px;
 }
 
-.activity-author > span {
+.activity-author > span a {
     font-family: CabinMedium;
     text-transform: uppercase;
     font-size: 0.5rem;
@@ -96,4 +97,29 @@ hr {
 
 .activity-metadata {
     padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #activity-container {
+        width: 90%;
+    }
+
+    .activity-metadata {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity-comments-likes {
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #activity-container {
+        width: 50%;
+    }
+
+    .activity-box {
+        margin: 40px 2px;
+    }
 }

@@ -17,7 +17,7 @@
 }
 
 h1 {
-    font-family: DroidSansBold, Bold;
+    font-family: DroidSansBold;
     font-size: 3.3rem;
     text-transform: uppercase;
     color: #333333;
@@ -26,7 +26,7 @@ h1 {
 }
 
 h5 {
-    font-family: DroidSansBold, Bold;
+    font-family: DroidSansBold;
     text-transform: uppercase;
     color: #333333;
     font-size: 1.4rem;
@@ -44,6 +44,47 @@ p {
     font-size: 1.18rem;
 }
 
+.quotation {
+    font-family: DroidSansBold;
+    color: #c9c9c9;
+    font-size: 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 30px 20px;
+    line-height: 1.4;
+}
+
+.quotation:before {
+    content: open-quote;
+    display: inline;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em;
+}
+
+.quotation::after {
+    content: close-quote;
+    display: inline;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ccc;
+    font-size: 3em;
+}
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+    background: #fffefe6b;
+}
+
+.second-slide {
+    background: #0000006b;
+}
+
 .slider-button {
     font-family: CabinSemiBold;
     color: #fefefe;
@@ -56,6 +97,13 @@ p {
     font-size: 0.7rem;
     margin-top: 18px;
     letter-spacing: 0.1rem;
+    transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.slider-button:hover {
+    width: 160px;
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
 ol {
@@ -82,6 +130,7 @@ ol {
     border-style: solid;
     border-width: 40px 0 40px 45px;
     border-color: transparent transparent transparent #ffffff;
+    transition: border-color 0.3s ease-in-out;
 }
 
 #left-triangle {
@@ -90,6 +139,15 @@ ol {
     border-style: solid;
     border-width: 40px 45px 40px 0;
     border-color: transparent #ffffff transparent transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#right-triangle:hover {
+    border-color: transparent transparent transparent #989fb6;
+}
+
+#left-triangle:hover {
+    border-color: transparent #989fb6 transparent transparent;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -113,4 +171,145 @@ ol {
     top: 49%;
     width: 10px;
     height: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 1rem;
+        text-align: center;
+        background: #fffefe6b;
+    }
+
+    .quotation {
+        font-size: 1rem;
+    }
+
+    .quotation::before, .quotation::after {
+        font-size: 4rem;
+    }
+    
+}
+
+@media only screen and (min-width: 530px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #f1f1f1;
+    }
+
+    .slider-button {
+        width: 100px;
+        font-size: 0.5rem;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 530px) {
+
+    .caption-slider {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #f1f1f1;
+    }
+
+    .slider-button {
+        width: 100px;
+        font-size: 0.6rem;
+        margin-top: 12px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+    .caption-slider {
+        width: 70%;
+        top: 47%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #f1f1f1;
+    }
+
+    .slider-button {
+        width: 105px;
+        font-size: 0.6rem;
+        padding: 7px;
+    }
+
+    .carousel-control-next-icon {
+        top: 48%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .quotation {
+        font-size: 0.7rem;
+    }
+
+    .quotation::before {
+        font-size: 3.5rem;
+        left: -15px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .caption-slider {
+        width: 70%;
+        top: 45%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: #f1f1f1;
+    }
+
+    .slider-button {
+        width: 100px;
+        font-size: 0.5rem;
+        padding: 6px;
+        margin-top: 5px;
+    }
+
+    .carousel-control-next-icon {
+        top: 48%;
+    }
 }
